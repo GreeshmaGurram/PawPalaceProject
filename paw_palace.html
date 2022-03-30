@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Paw_Palace_Project</title>
+    <link rel = "stylesheet" href = "pawPalace.css">
+    <link rel="stylesheet" href="pawPalace.js" type = "text/JavaScript"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light top-fixed">
+        <a class="nav-title" href="#"><img src="https://res.cloudinary.com/dfrvdrcag/image/upload/v1648536669/project/pawlogo_w5wt56.jpg" class="nav-logo" />Paw Palace</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#homeSection"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                        <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+                    </svg> Home<span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#myAccountSection" onclick="loginPage()">My Account</a>
+                <a class="nav-item nav-link" href="#shopSection">Shop</a>
+                <a class="nav-item nav-link" href="#lostAndFoundSection">Lost and Found</a>
+                <a class="nav-item nav-link" href="#petParentingSection">Pet Parenting</a>
+                <a class="nav-item nav-link" href="#happyStoriesSection">Happy Stories</a>
+                <a class="nav-item nav-link" href="#aboutUsSection">About Us</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container" id="mainContainerSection">
+        <div class="row pt-2" id="homeSection">
+            <div class="col-6 text-center">
+                <div class="d-flex flex-column">
+                    <a href="#dogSection"><img src="https://res.cloudinary.com/dfrvdrcag/image/upload/v1648537841/project/dog1_yw5w0d.jpg" class="home-img" /></a>
+                    <a href="#dogSection">
+                        <h1 class="home-heading">Dogs</h1>
+                    </a>
+                </div>
+            </div>
+            <div class="col-6 text-center">
+                <div class="d-flex flex-column">
+                    <a href="#catSection"><img src="https://res.cloudinary.com/dfrvdrcag/image/upload/v1648538024/project/c2_xmawbc.jpg" class="home-img" /></a>
+                    <a href="#catSection">
+                        <h1 class="home-heading">Cats</h1>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row pt-3 pb-3">
+            <div class="col-12">
+                <div id="dogOfferCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#dogOfferCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#dogOfferCarousel" data-slide-to="1"></li>
+                        <li data-target="#dogOfferCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://res.cloudinary.com/dfrvdrcag/image/upload/v1648538401/project/ofma_yjy7jz.jpg" class="d-block w-100 carousel-imgs" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://res.cloudinary.com/dfrvdrcag/image/upload/v1648538443/project/of1_u5wb3k.jpg" class="d-block w-100 carousel-imgs" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://res.cloudinary.com/dfrvdrcag/image/upload/v1648538494/project/download_vs458v.jpg" class="d-block w-100 carousel-imgs" alt="..." />
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#dogOfferCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#dogOfferCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="shopSection">
+            <h1>Shop</h1>
+            <div id="dogSection">
+                <h1>Dogs Section</h1>
+                <div>
+                    <h1>Wanna Buy Dogs??</h1>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6 text-center">
+                                <div class="d-flex flex-column dogCard">
+                                    <a href="#"><img src="https://res.cloudinary.com/dfrvdrcag/image/upload/v1648569032/project/bicon_bhjucf.jpg" class="dogCard-img" /></a>
+                                    <a href="#">
+                                        <h1 class="dogCard-heading">Bichon Frise Dog Breeds</h1>
+                                    </a>
+                                    <p class="dogCard-para">If you wanna buy a dog of this breed <a href="#">Click here</a></p>
+                                </div>
+                            </div>
+                            <div class="col-6 text-center">
+                                <div class="d-flex flex-column dogCard">
+                                    <a href="#"><img src="https://res.cloudinary.com/dfrvdrcag/image/upload/v1648551472/project/d5_poq9uk.jpg" class="dogCard-img" /></a>
+                                    <a href="#">
+                                        <h1 class="dogCard-heading">Pomeranian Dog Breeds</h1>
+                                    </a>
+                                    <p class="dogCard-para">If you wanna buy a dog of this breed <a href="#">Click here</a></p>
+                                </div>
+                            </div>
+                            <div class="col-6 text-center">
+                                <div class="d-flex flex-column dogCard">
+                                    <a href="#"><img src="https://res.cloudinary.com/dfrvdrcag/image/upload/v1648569116/project/d21_pktsfl.jpg" class="dogCard-img" /></a>
+                                    <a href="#">
+                                        <h1 class="dogCard-heading">Husky Dog Breeds</h1>
+                                    </a>
+                                    <p class="dogCard-para">If you wanna buy a dog of this breed <a href="#">Click here</a></p>
+                                </div>
+                            </div>
+                            <div class="col-6 text-center">
+                                <div class="d-flex flex-column dogCard">
+                                    <a href="#"><img src="https://res.cloudinary.com/dfrvdrcag/image/upload/v1648569214/project/lab_zwl8ev.jpg" class="dogCard-img" /></a>
+                                    <a href="#">
+                                        <h1 class="dogCard-heading">Labrador Retriever Dog Breeds</h1>
+                                    </a>
+                                    <p class="dogCard-para">If you wanna buy a dog of this breed <a href="#">Click here</a></p>
+                                </div>
+                            </div>
+                            <a class="view-all">View all</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <h1>Other dog Necessities</h1>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="d-flex flex-column neccesities-card">
+                                    <a href="#"><img src="https://res.cloudinary.com/dfrvdrcag/image/upload/v1648596769/project/foo_yeod0u.jpg" class="neccesities-card-img" /></a>
+                                    <a href="#">
+                                        <h1 class="neccesities-card-heading">Dog Food</h1>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex flex-column neccesities-card">
+                                    <a href="#"><img src="https://res.cloudinary.com/dfrvdrcag/image/upload/v1648597496/project/bed_ernhgz.jpg" class="neccesities-card-img" /></a>
+                                    <a href="#">
+                                        <h1 class="neccesities-card-heading">Dog Beds</h1>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex flex-column neccesities-card">
+                                    <a href="#"><img src="https://res.cloudinary.com/dfrvdrcag/image/upload/v1648597666/project/bow_yyintm.jpg" class="neccesities-card-img" /></a>
+                                    <a href="#">
+                                        <h1 class="neccesities-card-heading">Dog Bowls</h1>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex flex-column neccesities-card">
+                                    <a href="#"><img src="https://res.cloudinary.com/dfrvdrcag/image/upload/v1648597832/project/har_cszcz5.jpg" class="neccesities-card-img" /></a>
+                                    <a href="#">
+                                        <h1 class="neccesities-card-heading">Harness</h1>
+                                    </a>
+                                </div>
+                            </div>
+                            <a href="#" class="view-all">View all</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="catSection">
+                <h1 class="mt-5">Cats Section</h1>
+                <div>
+                    <h1>Looking to Buy a Cat??</h1>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6 text-center">
+                                <div class="d-flex flex-column dogCard">
+                                    <a href="#"><img src="https://res.cloudinary.com/dfrvdrcag/image/upload/v1648595788/project/sco_x4npzw.jpg" class="dogCard-img" /></a>
+                                    <a href="#">
+                                        <h1 class="dogCard-heading">Scottish Fold Cat Breeds</h1>
+                                    </a>
+                                    <p class="dogCard-para">If you wanna buy a cat of this breed <a href="#">Click here</a></p>
+                                </div>
+                            </div>
+                            <div class="col-6 text-center">
+                                <div class="d-flex flex-column dogCard">
+                                    <a href="#"><img src="https://res.cloudinary.com/dfrvdrcag/image/upload/v1648595900/project/rag_rpk8ow.jpg" class="dogCard-img" /></a>
+                                    <a href="#">
+                                        <h1 class="dogCard-heading">Ragdoll Cat Breeds</h1>
+                                    </a>
+                                    <p class="dogCard-para">If you wanna buy a cat of this breed <a href="#">Click here</a></p>
+                                </div>
+                            </div>
+                            <div class="col-6 text-center">
+                                <div class="d-flex flex-column dogCard">
+                                    <a href="#"><img src="https://res.cloudinary.com/dfrvdrcag/image/upload/v1648596019/project/sib_swijbk.jpg" class="dogCard-img" /></a>
+                                    <a href="#">
+                                        <h1 class="dogCard-heading">Siberian Cat Breeds</h1>
+                                    </a>
+                                    <p class="dogCard-para">If you wanna buy a cat of this breed <a href="#">Click here</a></p>
+                                </div>
+                            </div>
+                            <div class="col-6 text-center">
+                                <div class="d-flex flex-column dogCard">
+                                    <a href="#"><img src="https://res.cloudinary.com/dfrvdrcag/image/upload/v1648596161/project/bri_yswilj.jpg" class="dogCard-img" /></a>
+                                    <a href="#">
+                                        <h1 class="dogCard-heading">British LongHair Cat Breeds</h1>
+                                    </a>
+                                    <p class="dogCard-para">If you wanna buy a cat of this breed <a href="#">Click here</a></p>
+                                </div>
+                            </div>
+                            <a class="view-all">View all</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <h1>Other cat Necessities</h1>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="d-flex flex-column neccesities-card">
+                                    <a href="#"><img src="https://res.cloudinary.com/dfrvdrcag/image/upload/v1648598350/project/catfoo_xg1ekk.jpg" class="neccesities-card-img" /></a>
+                                    <a href="#">
+                                        <h1 class="neccesities-card-heading">Cat Food</h1>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex flex-column neccesities-card">
+                                    <a href="#"><img src="https://res.cloudinary.com/dfrvdrcag/image/upload/v1648598675/project/catho_hr7tic.jpg" class="neccesities-card-img" /></a>
+                                    <a href="#">
+                                        <h1 class="neccesities-card-heading">Cat Homes</h1>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex flex-column neccesities-card">
+                                    <a href="#"><img src="https://res.cloudinary.com/dfrvdrcag/image/upload/v1648598866/project/supp_yx7mz3.jpg" class="neccesities-card-img" /></a>
+                                    <a href="#">
+                                        <h1 class="neccesities-card-heading">Cat Supplements</h1>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex flex-column neccesities-card">
+                                    <a href="#"><img src="https://res.cloudinary.com/dfrvdrcag/image/upload/v1648598539/project/to_xwkkam.jpg" class="neccesities-card-img" /></a>
+                                    <a href="#">
+                                        <h1 class="neccesities-card-heading">Cat toys</h1>
+                                    </a>
+                                </div>
+                            </div>
+                            <a href="#" class="view-all">View all</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="lostAndFoundSection"></div>
+        <div id="petParentingSection" class="mt-4 mb-4">
+            <h1>Pet Parenting</h1>
+            <div id="dcTrainingSection">
+                <h1>Training Guide</h1>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <p>Dogs and cats are one of the most disciplined animals that can be trained easily without any efforts. Choosing
+                                the right way of training your dog and cat is one of the most crucial step that the owner should be careful about.
+                                Because choosing the wrong methods will make the things even more difficult resulting in your pets
+                                becoming more stubborn and naughty which most of the owners wanna avoid. So if you want to know more
+                                about how to train your pet, <a href="https://pets.webmd.com/dogs/guide/dog-training-obedience-training-for-dogs" target="_blank">Click here</a></p>
+                        </div>
+                        <div class="col-12">
+                            <p>For better understanding you can even watch these videos of our expert trainers team training the dogs and cats and also giving
+                                some important insights of their behaviours which are very important to be known to understand about the mood swings of them.</p>
+                        </div>
+                        <div class = "col-12">
+                            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                </ol>
+                              <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                      <iframe
+                                class="embed-responsive-item"
+                                src="https://www.youtube.com/embed/qOoCIlYxLb4"
+                                allowfullscreen
+                              ></iframe>
+                                    </div>
+                                    <div class="carousel-item">
+                                      <iframe
+                                class="embed-responsive-item"
+                                src="https://www.youtube.com/embed/Uu-hRtkaVLc?rel=0"
+                                allowfullscreen
+                              ></iframe>
+                                    </div>
+                                    <div class="carousel-item">
+                                      <iframe
+                                class="embed-responsive-item"
+                                src="https://www.youtube.com/embed/MbuT_TY51_E?rel=0"
+                                allowfullscreen
+                              ></iframe>
+                                    </div>
+                                    <div class="carousel-item">
+                                      <iframe
+                                class="embed-responsive-item"
+                                src="https://www.youtube.com/embed/AXfszibgDFI?rel=0"
+                                allowfullscreen
+                              ></iframe>
+                                    </div>
+                                  </div>
+                                  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                  </a>
+                                  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                  </a>
+                                </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="dcParentingSection">
+                <h1>Parenting Guide</h1>
+                <p>Food that is good for humans is not good for dogs and cats. And as they are aphonic animals that can't speak out what
+                they feel, so they give gestures or cues. These have already been clearly explained by our team. If you want to learn about them,
+                <a href = "#dcTrainingSection">Click here</a></p>
+                <p>And to know more about the food habits and for the answers for the questions of what, how and when to feed
+                <a href = "https://www.msdvetmanual.com/management-and-nutrition/nutrition-small-animals/dog-and-cat-foods" target = "_blank">Click here</a></p>
+                <p>For better understanding you can go through this video explained by our expert trainers team</p>
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                      <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                      </ol>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <iframe
+                    class="embed-responsive-item"
+                    src="https://www.youtube.com/embed/ngl1QsdTrqc"
+                    allowfullscreen
+                  ></iframe>
+                        </div>
+                        <div class="carousel-item">
+                          <iframe
+                    class="embed-responsive-item"
+                    src="https://www.youtube.com/embed/AalAw9Fqhyo?rel=0"
+                    allowfullscreen
+                  ></iframe>
+                        </div>
+                        <div class="carousel-item">
+                          <iframe
+                    class="embed-responsive-item"
+                    src="https://www.youtube.com/embed/ZKbavPnAWgs?rel=0"
+                    allowfullscreen
+                  ></iframe>
+                        </div>
+                      </div>
+                      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+            </div>
+        </div>
+        <div id="happyStoriesSection" class = "mt-4 mb-4">
+            <div class="container">
+                <div class="row">
+                    <h1>Happy Stories</h1>
+                    <div class="col-12">
+                        <p>We the team of Paw Palace, a NGO based pet store have seen many customers
+                            come to us back and share their happy stories and tears of joy because of adopting
+                            or buying these innocent cheerful animals. And we also feel delighted to share a few of those stories with you.</p>
+                    </div>
+                    <div class="col-12 mb-5">
+                        <div class="d-flex flex-column neccesities-card mt-2 mb-5">
+                            <img src="https://res.cloudinary.com/dfrvdrcag/image/upload/v1648617388/project/doglove_gkujcc.jpg" class = "happyStories-img"/>
+                            <p class="neccesities-card-heading">I am Zia. I'd to stay alone far away from my home due to my office location.I'm not used to staying alone. But after adpoting Bow Bow from Paw Palace, my life completely
+                                    changed because it always acompanies me, never makes me feel lonely. I wanna thank the whole team of Paw palace for 
+                                    helping me in every step from training to parenting.</p>
+                        </div>
+                    </div>
+                    <div class = "col-12 mb-5">
+                        <div class="d-flex flex-column neccesities-card">
+                            <img src="https://res.cloudinary.com/dfrvdrcag/image/upload/v1648618624/project/dclov_wd3jn4.jpg" />
+                            <p class="neccesities-card-heading">I am John. After death of my loved one, I couldn't get out of that depression. But adopting lily and Roo, I feel much more better.
+                                    I spend most of my time with these lil ones which keep me always engaged and happy.</p>
+                        </div>
+                    </div>
+                    <div class = "col-12 mb-5">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Vs_yZqU8Ovg?rel=0" allowfullscreen></iframe>
+                        </div>
+                    </div>   
+                        
+                </div>
+            </div>
+        </div>
+        <div id="aboutUsSection"></div>
+
+        </div>
+    <script src = "pawPalce.js"></script>
+</body>
+
+</html>
